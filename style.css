@@ -33,10 +33,10 @@ main::after {
 /* end CLEARFIX */
 
 .card {
-    width: calc(99% / 3);
+    width: calc(100% / 3);
     height: 100px;
     background-color: blueviolet;
-    display: inline-block;
+    float: left;
 }
 
 /* ------/TEAM------ */
