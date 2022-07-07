@@ -14,9 +14,29 @@
 
 /* end CSS RESET */
 
-/* INTRODUCTION */
+/* ------INTRODUCTION------ */
 header {
     text-align: center;
 }
 
-/* end INTRODUCTION */
+/* ------end INTRODUCTION------ */
+
+/* ------TEAM------ */
+
+/* CLEARFIX */
+main::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* end CLEARFIX */
+
+.card {
+    width: calc(99% / 3);
+    height: 100px;
+    background-color: blueviolet;
+    display: inline-block;
+}
+
+/* ------/TEAM------ */
