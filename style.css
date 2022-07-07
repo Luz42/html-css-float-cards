@@ -20,7 +20,7 @@ header {
 }
 
 h1,
-p {
+header>p {
     padding: 2% 0;
 }
 
@@ -29,7 +29,8 @@ p {
 /* ------TEAM------ */
 
 /* CLEARFIX */
-main::after {
+main::after,
+.card::after {
     content: '';
     display: table;
     clear: both;
@@ -39,10 +40,33 @@ main::after {
 
 .card {
     width: calc(94% / 3);
-    height: 100px;
     background-color: blueviolet;
-    float: left;
     margin: 2% 1%;
 }
+
+img,
+.card {
+    height: 100px;
+}
+
+.card,
+.info,
+img {
+    float: left;
+}
+
+.info {
+    width: calc(100% - 100px);
+    height: 100%;
+    padding: 0 5%;
+}
+
+h3,
+.info>p {
+    color: rgb(225, 255, 0);
+    line-height: calc(100px / 3);
+    color: white;
+}
+
 
 /* ------/TEAM------ */
